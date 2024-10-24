@@ -1,0 +1,164 @@
+[
+    {
+        "playerId": 1,
+        "name": "Sachin Tendulkar",
+        "country": "India",
+        "image": "https://i.ibb.co.com/nBhRTk3/1-sachin-tendulkar.jpg",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 3000000
+    },
+    {
+        "playerId": 2,
+        "name": "Ricky Ponting",
+        "country": "Australia",
+        "image": "https://i.ibb.co.com/L903Dky/2-Ricky.jpg",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 2800000
+    },
+    {
+        "playerId": 3,
+        "name": "Brian Lara",
+        "country": "West Indies",
+        "image": "https://i.ibb.co.com/7XGDrQb/3-Brian-Lara-1.jpg",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm legbreak",
+        "biddingPrice": 2900000
+    },
+    {
+        "playerId": 4,
+        "name": "Jacques Kallis",
+        "country": "South Africa",
+        "image": "https://i.ibb.co.com/xMFQkSg/4-JK.jpg",
+        "role": "All-rounder",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm fast-medium",
+        "biddingPrice": 2700000
+    },
+    {
+        "playerId": 5,
+        "name": "Muttiah Muralitharan",
+        "country": "Sri Lanka",
+        "image": "https://i.ibb.co.com/cgYcr3L/5-Murali.jpg",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 2500000
+    },
+    {
+        "playerId": 6,
+        "name": "Shane Warne",
+        "country": "Australia",
+        "image": "https://i.ibb.co.com/SsL7dYP/6-Warne.jpg",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm legbreak",
+        "biddingPrice": 2600000
+    },
+    {
+        "playerId": 7,
+        "name": "Rahul Dravid",
+        "country": "India",
+        "image": "https://i.ibb.co.com/DW80nvV/7-RD.jpg",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 2400000
+    },
+    {
+        "playerId": 8,
+        "name": "Adam Gilchrist",
+        "country": "Australia",
+        "image": "https://i.ibb.co.com/qDdVDm4/8-AG.jpg",
+        "role": "Wicketkeeper-batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "None",
+        "biddingPrice": 2500000
+    },
+    {
+        "playerId": 9,
+        "name": "Sourav Ganguly",
+        "country": "India",
+        "image": "https://i.ibb.co.com/NsdB9HY/9-SG.jpg",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 2300000
+    },
+    {
+        "playerId": 10,
+        "name": "Imrul Kayes(BRO)",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/jZ50B2v/10-IK.jpg",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 800000
+    },
+    {
+        "playerId": 11,
+        "name": "Wasim Akram",
+        "country": "Pakistan",
+        "image": "https://i.ibb.co.com/HDRGyfM/11-WA.jpg",
+        "role": "Bowler",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Left-arm fast",
+        "biddingPrice": 2700000
+    },
+    {
+        "playerId": 12,
+        "name": "Mahmudullah Riyad",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/5Rnythn/12-MR.jpg",
+        "role": "All-rounder",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 950000
+    },  
+    {
+        "playerId": 13,
+        "name": "Kumar Sangakkara",
+        "country": "Sri Lanka",
+        "image": "https://i.ibb.co.com/d5yBYM7/13-KS.jpg",
+        "role": "Wicketkeeper-batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "None",
+        "biddingPrice": 2800000
+    },
+    {
+        "playerId": 14,
+        "name": "Mahela Jayawardene",
+        "country": "Sri Lanka",
+        "image": "https://i.ibb.co.com/yQV7hZs/14-MJ.jpg",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 2300000
+    },
+    {
+        "playerId": 15,
+        "name": "Inzamam-ul-Haq",
+        "country": "Pakistan",
+        "image": "https://i.ibb.co.com/Lh9SG7g/15-IMH.jpg",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 2200000
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+

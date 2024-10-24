@@ -10,8 +10,11 @@ const Banners = ({handleFreeCoins}) => {
                     <img className='w-16 md:w-56 mb-2 md:mb-4' src={Cricket} alt="cricket-logo" />
                     <h3 className='text-sm md:text-3xl font-semibold md:font-bold text-white mb-2 md:mb-4'>Assemble Your Ultimate Dream 11 Cricket Team</h3>
                     <p className='text-gray-400 text-xs md:text-xl font-semibold'>Beyond Boundaries Beyond Limits </p>
-                    <button onClick={handleFreeCoins}
-                     className='bg-gradient-to-r from-purple-400 to-yellow-500 text-sm md:text-xl p-2 md:p-4 rounded-xl font-semibold mt-2 md:mt-4'>Claim Free Coin</button>
+                  <div className='border-2 mt-2 md:mt-4 p-1 rounded-xl'>
+                  <button onClick={handleFreeCoins}
+                     className='bg-gradient-to-r from-purple-400 to-yellow-500 text-sm md:text-xl p-2 md:p-4 rounded-xl font-semibold'>
+                    Claim Free Coin</button>
+                  </div>
                 </div>
             </div>
         </div>
