@@ -1,8 +1,22 @@
-function App() {
+import { useState } from "react"
+import Banners from "./components/Banners/Banners"
+import Navbar from "./components/Navbar/Navbar"
 
+function App() {
+const [freeCoins,setFreeCoins]=useState(0)
+const handleFreeCoins=()=>{
+  const newFreeCoins=freeCoins+60000;
+  setFreeCoins(newFreeCoins);
+}
   return (
     <>
-      <h1 className="text-xl">Kamil Ahmed</h1>
+      {/* Navbar */}
+      <Navbar
+       handleFreeCoins={handleFreeCoins}
+       freeCoins={freeCoins}
+       ></Navbar>
+      {/* Banner */}
+      <Banners handleFreeCoins={handleFreeCoins} ></Banners>
     </>
   )
 }
