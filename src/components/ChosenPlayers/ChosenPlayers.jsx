@@ -3,7 +3,7 @@ import ChosenPlayer from "../ChosenPlayer/ChosenPlayer";
 
 const ChosenPlayers = ({chosenPlayers}) => {
     return (
-        <div>
+        <div className="w-11/12 mx-auto">
             {
                 chosenPlayers.map((chosenP,idx)=><ChosenPlayer key={idx} chosenP={chosenP} ></ChosenPlayer>)
             }

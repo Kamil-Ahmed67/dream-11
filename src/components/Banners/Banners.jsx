@@ -12,7 +12,7 @@ const Banners = ({handleFreeCoins}) => {
                     <p className='text-gray-400 text-xs md:text-xl font-semibold'>Beyond Boundaries Beyond Limits </p>
                   <div className='border-2 mt-2 md:mt-4 p-1 rounded-xl'>
                   <button onClick={handleFreeCoins}
-                     className='bg-gradient-to-r from-purple-400 to-yellow-500 text-sm md:text-xl p-2 md:p-4 rounded-xl font-semibold'>
+                     className='bg-yellow-500 text-gray-900 hover:bg-gradient-to-r from-purple-400 to-yellow-500 text-sm md:text-xl p-2 md:p-4 rounded-xl font-semibold transition duration-400 ease-in-out'>
                     Claim Free Coin</button>
                   </div>
                 </div>
