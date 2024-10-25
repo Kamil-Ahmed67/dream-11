@@ -15,7 +15,7 @@ const PlayerCards = ({players,addChosenPlayers}) => {
     );
 };
 PlayerCards.propTypes={
-    players:PropTypes.object.isRequired,
+    players: PropTypes.array.isRequired,
     addChosenPlayers:PropTypes.func.isRequired
 }
 export default PlayerCards;

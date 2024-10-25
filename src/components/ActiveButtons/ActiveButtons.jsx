@@ -25,8 +25,8 @@ const ActiveButtons = ({chosenPlayers,handleIsActiveState,isActive}) => {
     );
 };
 ActiveButtons.propTypes={
-    chosenPlayers:PropTypes.object.isRequired,
-    handleIsActiveState:PropTypes.func.isRequired,
-    isActive:PropTypes.object.isRequired
+    chosenPlayers: PropTypes.array.isRequired, 
+    handleIsActiveState: PropTypes.func.isRequired,
+    isActive: PropTypes.object.isRequired,
 }
 export default ActiveButtons;

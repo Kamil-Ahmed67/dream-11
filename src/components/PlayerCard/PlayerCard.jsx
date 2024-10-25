@@ -43,7 +43,7 @@ const PlayerCard = ({ player,addChosenPlayers }) => {
     );
 };
 PlayerCard.propTypes = {
-    player: PropTypes.object.isRequired,
-    addChosenPlayers:PropTypes.object.isRequired
+    player: PropTypes.object.isRequired, 
+  addChosenPlayers: PropTypes.func.isRequired,
 }
 export default PlayerCard;
