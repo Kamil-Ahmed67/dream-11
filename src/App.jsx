@@ -4,6 +4,8 @@ import PlayerCards from "./components/PlayerCards/PlayerCards"
 import { useEffect, useState } from "react";
 import ChosenPlayers from "./components/ChosenPlayers/ChosenPlayers";
 import ActiveButtons from "./components/ActiveButtons/ActiveButtons";
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [freeCoins, setFreeCoins] = useState(0);
@@ -24,33 +26,51 @@ function App() {
     const { biddingPrice } = player;
 
     if (freeCoins < biddingPrice) {
-      alert("You do not have enough coins to choose this player.");
+      toast.error("You don't have enough coins to choose this player.", {
+        position: "top-center",
+        autoClose: 3000,
+      });
+      return;
+    }
+    if (chosenPlayers.includes(player)) {
+      toast.warn(`${player.name} is already in your team!`, {
+        position: "top-center",
+        autoClose: 3000,
+      });
+      return;
+    }
+    if (chosenPlayers.length >= 6) {
+      toast.warning("You have added the maximum number of players.", {
+        position: "top-center",
+        autoClose: 3000,
+      });
       return;
     }
     if (!chosenPlayers.includes(player)) {
       setChosenPlayers([...chosenPlayers, player]);
-    }
-    if (chosenPlayers.length >= 6) {
-      alert("You have added the maximum number of players.");
+      toast.success(`${player.name} has been added to your team!`, {
+        position: "top-center",
+        autoClose: 3000,
+      });
     }
   };
-  const [isActive, setIsActive] =useState({
-   card:true,
-   status:"playerCard"
+  const [isActive, setIsActive] = useState({
+    card: true,
+    status: "playerCard"
   });
   const handleIsActiveState = (status) => {
     if (status == "playerCard") {
-        setIsActive({
-            card: true,
-            status: "playerCard"
-        });
+      setIsActive({
+        card: true,
+        status: "playerCard"
+      });
     } else {
-        setIsActive({
-            card: false,
-            status: 'selectedPlayer'
-        });
+      setIsActive({
+        card: false,
+        status: 'selectedPlayer'
+      });
     }
-};
+  };
   return (
     <>
       <header>
@@ -64,16 +84,18 @@ function App() {
       </header>
       <main className="mt-14">
         {/* Available Players and Toggle Button */}
-        <ActiveButtons chosenPlayers={chosenPlayers} 
-        handleIsActiveState={handleIsActiveState} 
-        isActive={isActive}
-         ></ActiveButtons>
+        <ActiveButtons chosenPlayers={chosenPlayers}
+          handleIsActiveState={handleIsActiveState}
+          isActive={isActive}
+        ></ActiveButtons>
         {/* <PlayerCards players={players} addChosenPlayers={addChosenPlayers} /> */}
         {isActive.card ? (
-          <PlayerCards players={players} addChosenPlayers={addChosenPlayers}></PlayerCards>
+          <PlayerCards players={players} addChosenPlayers={addChosenPlayers} ></PlayerCards>
         ) : (
-         <ChosenPlayers chosenPlayers={chosenPlayers}></ChosenPlayers>
+          <ChosenPlayers chosenPlayers={chosenPlayers}></ChosenPlayers>
         )}
+        {/* Toast-Container */}
+        <ToastContainer />
       </main>
     </>
   )
