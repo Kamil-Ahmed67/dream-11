@@ -1,16 +1,16 @@
 import Banners from "./components/Banners/Banners"
 import Navbar from "./components/Navbar/Navbar"
-import Toggles from "./components/Toggles/Toggles"
 import PlayerCards from "./components/PlayerCards/PlayerCards"
 import { useEffect, useState } from "react";
 import ChosenPlayers from "./components/ChosenPlayers/ChosenPlayers";
+import ActiveButtons from "./components/ActiveButtons/ActiveButtons";
 
 function App() {
   const [freeCoins, setFreeCoins] = useState(0);
   const handleFreeCoins = () => {
     const newFreeCoins = freeCoins + 600000;
     setFreeCoins(newFreeCoins);
-  }
+  };
   // Fetching all players data
   const [players, setPlayers] = useState([])
   useEffect(() => {
@@ -34,6 +34,23 @@ function App() {
       alert("You have added the maximum number of players.");
     }
   };
+  const [isActive, setIsActive] =useState({
+   card:true,
+   status:"playerCard"
+  });
+  const handleIsActiveState = (status) => {
+    if (status == "playerCard") {
+        setIsActive({
+            card: true,
+            status: "playerCard"
+        });
+    } else {
+        setIsActive({
+            card: false,
+            status: 'selectedPlayer'
+        });
+    }
+};
   return (
     <>
       <header>
@@ -47,9 +64,16 @@ function App() {
       </header>
       <main className="mt-14">
         {/* Available Players and Toggle Button */}
-        <Toggles chosenPlayers={chosenPlayers}></Toggles>
-        <PlayerCards players={players} addChosenPlayers={addChosenPlayers} />
-        <ChosenPlayers chosenPlayers={chosenPlayers} />
+        <ActiveButtons chosenPlayers={chosenPlayers} 
+        handleIsActiveState={handleIsActiveState} 
+        isActive={isActive}
+         ></ActiveButtons>
+        {/* <PlayerCards players={players} addChosenPlayers={addChosenPlayers} /> */}
+        {isActive.card ? (
+          <PlayerCards players={players} addChosenPlayers={addChosenPlayers}></PlayerCards>
+        ) : (
+         <ChosenPlayers chosenPlayers={chosenPlayers}></ChosenPlayers>
+        )}
       </main>
     </>
   )
