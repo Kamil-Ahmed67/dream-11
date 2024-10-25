@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { FaUserCircle } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
-const PlayerCard = ({ player }) => {
+const PlayerCard = ({ player,addChosenPlayers }) => {
     const {name, country, image, role, battingType, bowlingType, biddingPrice
     } = player;
     return (
@@ -34,7 +34,8 @@ const PlayerCard = ({ player }) => {
                     </div>
                     <div className="flex justify-between items-center mt-1">
                         <h1 className="text-base text-gray-800 font-semibold">Price:${biddingPrice}</h1>
-                        <button className="border-2 text-base text-gray-800 p-2 rounded-xl hover:bg-yellow-400 hover:text-black transition duration-300 ease-in-out">Choose Player</button>
+                        <button onClick={()=>addChosenPlayers(player)}
+                        className="border-2 text-base text-gray-800 p-2 rounded-xl hover:bg-yellow-400 hover:text-black transition duration-300 ease-in-out">Choose Player</button>
                     </div>
                 </div>
             </div>
@@ -42,6 +43,7 @@ const PlayerCard = ({ player }) => {
     );
 };
 PlayerCard.propTypes = {
-    player: PropTypes.object.isRequired
+    player: PropTypes.object.isRequired,
+    addChosenPlayers:PropTypes.object.isRequired
 }
 export default PlayerCard;
