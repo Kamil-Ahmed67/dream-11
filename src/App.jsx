@@ -6,6 +6,7 @@ import ChosenPlayers from "./components/ChosenPlayers/ChosenPlayers";
 import ActiveButtons from "./components/ActiveButtons/ActiveButtons";
 import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [freeCoins, setFreeCoins] = useState(0);
@@ -94,6 +95,7 @@ function App() {
         ) : (
           <ChosenPlayers chosenPlayers={chosenPlayers}></ChosenPlayers>
         )}
+        <Footer></Footer>
         {/* Toast-Container */}
         <ToastContainer />
       </main>
