@@ -58,7 +58,7 @@ const Footer = () => {
 
                             {/* Column-2: Quick Links */}
                             <div className="flex flex-col items-center lg:items-start text-center text-white lg:text-left mb-8 lg:mb-0">
-                                <h3 className="font-bold text-gray-300 text-lg mb-2">Quick Links</h3>
+                               <h3 className="text-center font-bold text-gray-300 text-lg mb-2 w-full">Quick Links</h3>
                                 <a className="hover:text-yellow-500 text-sm text-gray-300 cursor-pointer mb-2">Home</a>
                                 <a className="hover:text-yellow-500 text-sm text-gray-300 cursor-pointer mb-2">Services</a>
                                 <a className="hover:text-yellow-500 text-sm text-gray-300 cursor-pointer mb-2">About Us</a>
