@@ -72,6 +72,17 @@ function App() {
       });
     }
   };
+  const handleRemove=id=>{
+    //which player to remove
+    const removedPlayer=chosenPlayers.find(player=>player.playerId===id);
+    //remove from the chosen players container
+    const updatedChosenPlayers=chosenPlayers.filter(player=>player.playerId !==id)
+    setChosenPlayers(updatedChosenPlayers);
+    toast.info(`${removedPlayer.name} has been removed from your team.`, {
+      position: "top-center",
+      autoClose: 3000,
+    });
+  }
   return (
     <>
       {/* Navbar */}
@@ -94,7 +105,7 @@ function App() {
         {isActive.card ? (
           <PlayerCards players={players} addChosenPlayers={addChosenPlayers} ></PlayerCards>
         ) : (
-          <ChosenPlayers chosenPlayers={chosenPlayers}></ChosenPlayers>
+          <ChosenPlayers chosenPlayers={chosenPlayers} handleRemove={handleRemove} handleIsActiveState={handleIsActiveState}></ChosenPlayers>
         )}
         <Footer></Footer>
         {/* Toast-Container */}

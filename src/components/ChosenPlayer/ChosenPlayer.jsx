@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { RiDeleteBin6Line } from "react-icons/ri";
-const ChosenPlayer = ({ chosenP }) => {
+const ChosenPlayer = ({ chosenP ,handleRemove}) => {
+    const {playerId}=chosenP;
     return (
         <div className="bg-white p-4 mb-2 rounded-lg border-2 shadow-md flex justify-between items-center ">
             <div className="flex space-x-4 items-center">
@@ -14,12 +15,14 @@ const ChosenPlayer = ({ chosenP }) => {
                 </div>
             </div>
             <div>
-                <RiDeleteBin6Line></RiDeleteBin6Line>
+                <RiDeleteBin6Line onClick={()=>handleRemove(playerId)}
+                 className="cursor-pointer text-lg md:text-xl hover:text-red-600"></RiDeleteBin6Line>
             </div>
         </div>
     );
 };
 ChosenPlayer.propTypes = {
-    chosenP: PropTypes.object.isRequired
+    chosenP: PropTypes.object.isRequired,
+    handleRemove:PropTypes.func.isRequired
 }
 export default ChosenPlayer;

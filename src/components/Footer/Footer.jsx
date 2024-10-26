@@ -87,7 +87,7 @@ const Footer = () => {
                 {/* Divider and Footer Bottom Text */}
                 <hr className="border-t border-gray-700 w-full my-8" />
                 <p className="text-center text-sm text-gray-300 p-5">
-                    &copy;2024 Your Company All Rights Reserved
+                    &copy;2024 Dream-11 All Rights Reserved
                 </p>
             </footer>
         </div>
