@@ -1,55 +1,97 @@
 import FooterImg from '../../assets/images/logo-footer.png'
+import NewsLatterShadow from '../../assets/images/bg-shadow.png'
 const Footer = () => {
     return (
-        <div className='bg-black'>
-
-            <footer className="text-base-content p-10 mt-16 flex flex-col lg:flex-row justify-between">
-                {/* Column-1 */}
-                <div className="flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
-                    <div className="flex items-center gap-3 font-bold justify-center lg:justify-start">
-                        <span className="text-gray-300 text-lg font-extrabold">About Us</span>
-                    </div>
-                    <div className="text-sm text-gray-300 mt-4">
-                        <p>We are a passionate team</p>
-                        <p>dedicated to providing the best</p>
-                        <p>services to our customers.</p>
-                    </div>
-                    <div className="flex items-center gap-x-4 mt-4 justify-center lg:justify-start">
-                        <i className="fa-brands text-3xl text-white fa-square-facebook"></i>
-                        <i className="fa-brands text-3xl text-white fa-square-x-twitter"></i>
-                        <i className="fa-brands text-3xl text-white fa-youtube"></i>
-                        <i className="fa-brands text-3xl text-white fa-instagram"></i>
-                    </div>
-                </div>
-
-                {/* Column-2 */}
-                <div className="flex flex-col items-center lg:items-start text-center text-white lg:text-left mb-8 lg:mb-0">
-                    <h3 className="font-bold text-gray-300 text-lg">Useful Links</h3>
-                    <a className="hover:text-yellow-500 text-base text-gray-300 cursor-pointer">Home</a>
-                    <a className="hover:text-yellow-500 text-base text-gray-300 cursor-pointer">Services</a>
-                    <a className="hover:text-yellow-500 text-base text-gray-300 cursor-pointer">About Us</a>
-                    <a className="hover:text-yellow-500 text-base text-gray-300 cursor-pointer">Contact</a>
-                </div>
-
-                {/* Column-3 */}
-                <div className='md:w-1/3'>
-                    <div className='items-center md:items-start'>
-                        <div className='flex flex-col items-center text-white text-center lg:items-start lg:text-left'>
-                            <h3 className='text-lg font-semibold text-gray-300 mb-2'>Subscribe</h3>
-                            <p className='text-sm text-gray-300 mb-4'>Subscribe to our newsletter for the latest updates</p>
+        <div className="bg-black">
+            <footer className="text-base-content p-10 mt-16">
+                <div className="relative">
+                    {/*News Letter Section */}
+                    <div className="absolute  inset-x-0 -top-40 flex justify-center">
+                        <div className="p-2 border-2 border-white rounded-2xl">
+                            <div className="relative w-full md:w-[1200px]   p-10 rounded-xl bg-gradient-to-r from-white to-gray-100">
+                                <img
+                                    src={NewsLatterShadow}
+                                    alt=""
+                                    className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                                />
+                                <div className="relative z-10 md:p-8">
+                                    <h3 className="text-lg md:text-3xl font-bold text-center text-gray-800 mb-2">Subscribe to our Newsletter</h3>
+                                    <p className="text-gray-600 text-sm md:text-base mb-4 text-center">Get the latest updates and news right in your inbox!</p>
+                                    <div className="flex justify-center items-center gap-2">
+                                        <input
+                                            type="email"
+                                            placeholder="Enter your email"
+                                            className="py-2 md:py-3 px-3 md:px-5 w-full md:w-[400px] rounded-xl  border border-gray-300"
+                                        />
+                                        <button className="py-2 md:py-3 px-3 md:px-5 bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-bold rounded-xl">
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-                    <div className="flex items-center">
-                        <input type="email" placeholder="Enter your email" className="py-3 px-5 w-full rounded-l-xl focus:outline-none" />
-                        <button className="py-3 px-5 bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-bold rounded-r-xl">Subscribe</button>
+
+
+                    {/* Main Footer Content */}
+                    <div className=" pt-36">
+                        <div className='flex flex-col lg:flex-row justify-center items-center mb-10'>
+                            <img src={FooterImg} alt="Logo" className=" h-40 w-40- mb-4" />
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-between items-center'>
+                            {/* Column-1: About Us */}
+                            <div className="flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
+                                <span className="text-gray-300 text-lg font-extrabold">About Us</span>
+                                <div className="text-sm text-gray-300 mt-4">
+                                    <p>We are a passionate team </p>
+                                    <p>dedicated to providing</p>
+                                    <p>the best services to our customers.</p>
+                                </div>
+                                <div className="flex items-center gap-x-4 mt-4 justify-center lg:justify-start">
+                                    <i className="fa-brands text-3xl text-white fa-square-facebook"></i>
+                                    <i className="fa-brands text-3xl text-white fa-square-x-twitter"></i>
+                                    <i className="fa-brands text-3xl text-white fa-youtube"></i>
+                                    <i className="fa-brands text-3xl text-white fa-instagram"></i>
+                                </div>
+                            </div>
+
+                            {/* Column-2: Quick Links */}
+                            <div className="flex flex-col items-center lg:items-start text-center text-white lg:text-left mb-8 lg:mb-0">
+                                <h3 className="font-bold text-gray-300 text-lg mb-2">Quick Links</h3>
+                                <a className="hover:text-yellow-500 text-sm text-gray-300 cursor-pointer mb-2">Home</a>
+                                <a className="hover:text-yellow-500 text-sm text-gray-300 cursor-pointer mb-2">Services</a>
+                                <a className="hover:text-yellow-500 text-sm text-gray-300 cursor-pointer mb-2">About Us</a>
+                                <a className="hover:text-yellow-500 text-sm text-gray-300 cursor-pointer">Contact</a>
+                            </div>
+
+                            {/* Column-3: Subscribe */}
+                            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-2">
+                                <h3 className="text-lg font-bold text-gray-300 mb-2">Subscribe</h3>
+                                <p className="text-sm text-gray-300 mb-4">Subscribe to our newsletter for the latest updates</p>
+                                <div className="flex">
+                                    <input
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        className="py-3 px-5 w-full rounded-l-xl focus:outline-none border border-gray-300"
+                                    />
+                                    <button className="py-3 px-5 bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-bold rounded-r-xl">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                {/* Divider and Footer Bottom Text */}
+                <hr className="border-t border-gray-700 w-full my-8" />
+                <p className="text-center text-sm text-gray-300 p-5">
+                    &copy;2024 Your Company All Rights Reserved
+                </p>
             </footer>
-            <hr className="border-t border-gray-700 w-full" />
-            <p className='text-center text-sm text-gray-300 p-5'>@2024 Your Company All Rights Reserved</p>
-                  
         </div>
+
     );
 };
 
