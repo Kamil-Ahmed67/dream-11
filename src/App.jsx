@@ -4,7 +4,7 @@ import PlayerCards from "./components/PlayerCards/PlayerCards"
 import { useEffect, useState } from "react";
 import ChosenPlayers from "./components/ChosenPlayers/ChosenPlayers";
 import ActiveButtons from "./components/ActiveButtons/ActiveButtons";
-import { ToastContainer, toast} from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from "./components/Footer/Footer";
 
@@ -74,15 +74,16 @@ function App() {
   };
   return (
     <>
-      <header>
-        {/* Navbar */}
+      {/* Navbar */}
+      <nav className="sticky top-0 z-50 backdrop-blur-2xl ">
         <Navbar
           handleFreeCoins={handleFreeCoins}
           freeCoins={freeCoins}
         ></Navbar>
-        {/* Banner */}
-        <Banners handleFreeCoins={handleFreeCoins} ></Banners>
-      </header>
+      </nav>
+
+      {/* Banner */}
+      <Banners handleFreeCoins={handleFreeCoins} ></Banners>
       <main className="mt-14">
         {/* Available Players and Toggle Button */}
         <ActiveButtons chosenPlayers={chosenPlayers}
