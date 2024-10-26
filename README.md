@@ -27,3 +27,7 @@ Assures that props are type-checked, improving code reliability by confirming th
 ## Key Features:
 ### 1.Player Selection & Coin Management:
 Users can select players within a set coin budget, adding realism to the team-building process. A notification system provides feedback on successful or failed additions due to budget or roster limits.
+### 2.Dynamic Player & Team Toggle:
+A toggle allows users to view all available players or their selected team lineup, making it easy to switch between selecting new players and reviewing their chosen roster.
+### 3.Responsive & Interactive UI:
+The interface is designed to be responsive across devices, with smooth, interactive transitions like hover effects, button animations, and toast notifications for an engaging user experience.
