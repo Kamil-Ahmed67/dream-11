@@ -21,9 +21,9 @@ const Footer = () => {
                                         <input
                                             type="email"
                                             placeholder="Enter your email"
-                                            className="py-2 md:py-3 px-3 md:px-5 w-full md:w-[400px] rounded-xl  border border-gray-300"
+                                            className="py-2 md:py-3 px-3 md:px-5 w-full md:w-[400px] text-sm md:text-lg rounded-xl  border border-gray-300"
                                         />
-                                        <button className="py-2 md:py-3 px-3 md:px-5 bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-bold rounded-xl">
+                                        <button className="py-2 md:py-3 px-3 md:px-5 text-sm md:text-lg bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-semibold rounded-xl">
                                             Subscribe
                                         </button>
                                     </div>
@@ -73,9 +73,9 @@ const Footer = () => {
                                     <input
                                         type="email"
                                         placeholder="Enter your email"
-                                        className="py-3 px-5 w-full rounded-l-xl focus:outline-none border border-gray-300"
+                                        className="py-3 px-5 w-full rounded-l-xl text-sm md:text-lg focus:outline-none border border-gray-300"
                                     />
-                                    <button className="py-3 px-5 bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-bold rounded-r-xl">
+                                    <button className="py-3 px-5 text-sm md:text-lg bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-bold rounded-r-xl">
                                         Subscribe
                                     </button>
                                 </div>

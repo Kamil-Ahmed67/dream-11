@@ -12,7 +12,7 @@ const ChosenPlayers = ({chosenPlayers,handleRemove,handleIsActiveState}) => {
                 
             </div>
            <button  onClick={()=>handleIsActiveState("playerCard")}
-            className="py-2 md:py-3 px-3 md:px-5 bg-yellow-400 hover:bg-gradient-to-r from-pink-500 to-yellow-500 text-gray-800 font-bold rounded-xl">
+            className="py-2 md:py-3 px-3 md:px-5 bg-yellow-400  hover:bg-gradient-to-r from-purple-400 to-yellow-500 transition duration-400 ease-in-out text-gray-800 text-base md:text-lg font-semibold rounded-xl">
              Add More Player
             </button>
            </div>
